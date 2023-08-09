@@ -8,6 +8,21 @@ body {
     display: flex;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-green {
+    background-color: #7cb47a;
+}
+
+.shadow {
+    -webkit-box-shadow: 3px 8px 41px 4px rgba(34, 60, 80, 0.14);
+    -moz-box-shadow: 3px 8px 41px 4px rgba(34, 60, 80, 0.14);
+    box-shadow: 3px 8px 41px 4px rgba(34, 60, 80, 0.14);
+}
+
 .base-padding {
     padding-left: 40px;
     padding-right: 40px;
@@ -49,3 +64,76 @@ body {
     font-weight: bold;
 }
 
+.main-wrapper {
+    padding-top: 40px;
+    gap: 20px;
+}
+
+aside {
+    flex-basis: 280px;
+}
+
+.aside-title {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 130px;
+}
+
+.service {
+    padding-left: 23px;
+    padding-right: 13px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-title {
+    font-size: 14px;
+    width: 55px;
+}
+
+.services-human {
+    padding-top: 19px;
+    width: 150px;
+}
+
+.bottles-wrapper {
+    padding: 24px 0 31px 25px;
+    gap: 22px
+}
+
+.all-research-button {
+    display: flex;
+    gap: 26px;
+    border: 0;
+    padding: 0;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    width: 240px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+main {
+    flex-basis: 960px;
+}
