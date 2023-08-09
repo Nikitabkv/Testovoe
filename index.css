@@ -17,8 +17,20 @@ table {
     flex-direction: column;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
 .bg-green {
     background-color: #7cb47a;
+}
+
+.bg-grey {
+    background-color: #ededed;
 }
 
 .shadow {
@@ -70,6 +82,7 @@ table {
 
 .main-wrapper {
     padding-top: 40px;
+    padding-bottom: 40px;
     gap: 20px;
 }
 
@@ -154,5 +167,67 @@ main {
 }
 
 .welcome-atlas {
+    gap: 39px;
+    padding: 70px 0 55px 40px;
+    background-image: url("/public/img/welcome-atlas-bg.png");
+}
 
+.welcome-atlas h1 {
+    font-size: 40px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.welcome-atlas span {
+    font-size: 20px;
+}
+
+main h2 {
+    font-size: 30px;
+}
+
+.atlas-features-wrapper {
+    row-gap: 40px;
+}
+
+.atlas-features-item {
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.atlas-features-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+}
+
+.atlas-features-item span {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.instruction-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 45px;
+}
+
+.instruction-wrapper:nth-child(2n-1) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.instruction-text {
+    flex-basis: 360px;
+    justify-content: center;
+}
+
+.instruction-number {
+    font-weight: 700;
+    font-size: 120px;
+    color: #e5e5e5;
 }
