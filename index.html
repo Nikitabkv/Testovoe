@@ -4,27 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Testovoe</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto@display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="reg-form-wrapper">
+    <form class="reg-form">
+        <label for="name">Введите ФИО: </label>
+        <input type="text" name="name" id="name" required />
+        <label for="phone">Введите ваш номер телефона: </label>
+        <input type="tel" name="phone" id="phone" required />
+        <label for="email">Введите ваш email: </label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Введите пароль: </label>
+        <input type="password" name="password" id="password" required />
+        <label for="password2">Повторите пароль: </label>
+        <input type="password" name="password2" id="password2" required />
+        <button>Save</button>
+    </form>
+</div>
 <header class="shadow">
-    <div class="row nav-wrapper base-padding">
-        <nav class="row links-nav-wrapper">
+    <div class="row bg-grey header-wrapper">
+        <div class="row nav-wrapper">
+            <button class="burger-nav">
+                <svg id="Glyph" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"><path d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z" id="XMLID_314_"/><path d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z" id="XMLID_315_"/><path d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z" id="XMLID_316_"/></svg>
+            </button>
+            <nav class="row links-nav-wrapper">
             <a>Главная</a>
             <a>Обследование и анализы</a>
             <a>Запись онлайн</a>
         </nav>
-        <div class="row header-button-wrapper">
-            <button class="header-button">
+            <div class="row header-button-wrapper">
+            <button class="header-button personal-data">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="12px">
                     <path fill-rule="evenodd"  fill="rgb(136, 136, 136)" d="M9.537,12.000 C9.282,12.000 9.074,11.782 9.074,11.514 L9.074,10.902 C9.074,9.505 7.596,8.324 5.000,8.324 C2.404,8.324 0.925,9.505 0.925,10.902 L0.925,11.514 C0.925,11.782 0.718,12.000 0.462,12.000 C0.207,12.000 -0.000,11.782 -0.000,11.514 L-0.000,10.902 C-0.000,8.912 1.796,7.353 5.000,7.353 C8.204,7.353 10.000,8.912 10.000,10.902 L10.000,11.514 C10.000,11.782 9.793,12.000 9.537,12.000 ZM5.435,5.816 C5.296,5.838 5.157,5.848 5.019,5.848 C4.424,5.848 3.846,5.649 3.359,5.270 C2.759,4.803 2.368,4.118 2.259,3.342 C2.032,1.741 3.089,0.245 4.615,0.008 C4.887,-0.035 5.163,-0.035 5.435,0.008 C6.033,0.101 6.575,0.387 7.003,0.836 C7.430,1.285 7.703,1.854 7.792,2.481 C8.018,4.082 6.961,5.579 5.435,5.816 ZM6.876,2.624 C6.754,1.762 6.121,1.096 5.300,0.969 C5.209,0.954 5.117,0.947 5.025,0.947 C4.933,0.947 4.842,0.954 4.751,0.969 C3.730,1.127 3.023,2.129 3.174,3.200 C3.247,3.719 3.509,4.177 3.910,4.490 C4.312,4.802 4.805,4.932 5.300,4.855 C6.320,4.696 7.028,3.695 6.876,2.624 Z"/>
                 </svg>
                 <span>Личные данные</span>
             </button>
-            <button class="header-button">
+            <button class="header-button entry">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="12px">
                     <path fill-rule="evenodd"  fill="rgb(136, 136, 136)" d="M12.988,6.123 C12.976,6.148 12.976,6.161 12.964,6.187 C12.952,6.187 12.952,6.200 12.952,6.213 C12.940,6.226 12.927,6.252 12.915,6.277 C12.915,6.290 12.903,6.303 12.903,6.303 C12.891,6.329 12.867,6.355 12.843,6.381 L10.587,8.869 C10.490,8.973 10.370,9.024 10.237,9.024 C10.105,9.024 9.984,8.973 9.888,8.869 C9.694,8.663 9.694,8.327 9.888,8.146 L11.299,6.562 L3.725,6.562 C3.448,6.562 3.231,6.329 3.231,6.032 C3.231,5.735 3.448,5.502 3.725,5.502 L11.299,5.502 L9.888,3.918 C9.694,3.712 9.694,3.376 9.888,3.169 C10.080,2.962 10.394,2.962 10.587,3.169 L12.843,5.658 C12.867,5.683 12.891,5.709 12.903,5.735 C12.915,5.735 12.915,5.748 12.915,5.748 C12.927,5.774 12.940,5.800 12.952,5.825 C12.964,5.825 12.964,5.838 12.964,5.851 C12.976,5.864 12.988,5.890 12.988,5.916 C13.000,5.955 13.000,5.980 13.000,6.019 C13.000,6.058 13.000,6.084 12.988,6.123 ZM7.539,4.016 C7.281,4.016 7.078,3.783 7.078,3.486 L7.078,1.059 L0.923,1.059 L0.923,10.940 L7.078,10.940 L7.078,8.513 C7.078,8.216 7.281,7.984 7.539,7.984 C7.798,7.984 8.001,8.216 8.001,8.513 L8.001,11.470 C8.001,11.767 7.798,12.000 7.539,12.000 L0.461,12.000 C0.214,12.000 0.011,11.767 -0.000,11.470 L-0.000,0.530 C-0.000,0.232 0.202,-0.000 0.461,-0.000 L7.539,-0.000 C7.798,-0.000 8.001,0.232 8.001,0.530 L8.001,3.486 C8.001,3.783 7.798,4.016 7.539,4.016 Z"/>
                 </svg>
@@ -32,20 +52,23 @@
             </button>
         </div>
     </div>
-    <div class="row second-nav-wrapper base-padding">
+    </div>
+    <div class="row header-wrapper">
+    <div class="row second-nav-wrapper">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="38px">
                 <image  x="0px" y="0px" width="200px" height="38px"  xlink:href="data:img/png;base64,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" />
             </svg>
         </div>
-        <div>
-            <span class="user-name">
+        <div class="user-name">
+            <span>
                 Тестов Иван Иванович
             </span>
         </div>
     </div>
+    </div>
 </header>
-<div class="row base-padding main-wrapper">
+<div class="row main-wrapper">
     <aside class="column">
             <div class="column shadow">
                 <div class="bg-green aside-title">
@@ -245,7 +268,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="" style="height: 270px; width: 480px">
+                <img alt="Пример интерфейса 1" src="/public/img/01.png" class="instruction-image">
             </div>
             <div class="wrap instruction-wrapper">
                 <div class="column grow instruction-text">
@@ -257,20 +280,23 @@
                         </div>
                     </div>
                 </div>
-                <img src="" style="height: 270px; width: 480px">
+                <img alt="Пример интерфейса 2" src="/public/img/02.png" class="instruction-image">
             </div>
         </div>
     </main>
 </div>
-<footer class="row bg-green base-padding">
-    <div>© 2018 Atlas Patient</div>
-    <div>
+<footer class="row bg-green">
+    <div class="row footer-wrapper">
+        <div>© 2018 Atlas Patient</div>
+        <div>
             <span>На верх</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="12px">
                 <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M8.834,4.964 C8.742,5.058 8.621,5.106 8.501,5.106 C8.381,5.106 8.260,5.058 8.168,4.964 L4.956,1.655 L4.956,11.515 C4.956,11.783 4.745,12.000 4.486,12.000 C4.226,12.000 4.015,11.783 4.015,11.515 L4.015,1.655 L0.803,4.964 C0.619,5.153 0.321,5.153 0.137,4.964 C-0.046,4.774 -0.046,4.467 0.137,4.278 L4.153,0.142 C4.153,0.142 4.153,0.142 4.153,0.142 C4.238,0.054 4.356,-0.000 4.486,-0.000 C4.616,-0.000 4.733,0.054 4.818,0.142 C4.818,0.142 4.818,0.142 4.818,0.142 L8.834,4.278 C9.017,4.467 9.017,4.774 8.834,4.964 Z"/>
             </svg>
         </div>
+    </div>
 </footer>
+<script src="/index.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,98 @@
+@media (max-width: 819px) {
+
+    .burger-nav {
+        display: flex;
+    }
+
+    .nav-wrapper {
+        position: relative;
+        padding: 0 20px 0 20px;
+    }
+
+    .links-nav-wrapper{
+        display: none
+    }
+
+    .links-nav-wrapper-open {
+        display: flex;
+        background-color: #ededed;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .second-nav-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .user-name {
+        text-align: end;
+    }
+
+    .main-wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    aside {
+        width: 340px;
+        gap: 20px;
+    }
+
+    main {
+        width: 340px;
+    }
+
+    main h2 {
+        font-size: 23px;
+    }
+
+    .welcome-atlas {
+        background-position-x: -230px;
+    }
+
+    .welcome-atlas h1 {
+        font-size: 31px;
+    }
+
+    .welcome-atlas span {
+        font-size: 17px;
+    }
+
+    .services-wrapper {
+        justify-content: center;
+    }
+
+    .bottles-wrapper {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .all-research-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .atlas-features-wrapper {
+        row-gap: 20px;
+    }
+
+    .atlas-features-icon:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+
+    .instruction-wrapper {
+        gap: 15px;
+    }
+
+    .footer-wrapper {
+        justify-content: space-evenly;
+    }
+}

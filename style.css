@@ -4,6 +4,11 @@ body {
     margin: 0;
 }
 
+.modal-open {
+    height: 100vh;
+    overflow: hidden;
+}
+
 table {
     border-spacing: 0;
 }
@@ -39,20 +44,66 @@ table {
     box-shadow: 3px 8px 41px 4px rgba(34, 60, 80, 0.14);
 }
 
-.base-padding {
-    padding-left: 40px;
-    padding-right: 40px;
+.reg-form-wrapper {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(155 155 155 / 63%);
+}
+
+.reg-form-wrapper-open {
+    display: flex;
+    z-index: 1;
+    backdrop-filter: blur(4px);
+}
+
+.reg-form {
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.reg-form input {
+    width: 270px;
+}
+
+.header-wrapper {
+    justify-content: center;
 }
 
 .nav-wrapper {
-    background-color: #ededed;
+    flex-grow: 1;
+    max-width: 1280px;
     height: 40px;
     justify-content: space-between;
     align-items: center;
 }
 
+.burger-nav {
+    display: none;
+    border: 0;
+    padding: 0;
+}
+
 .links-nav-wrapper {
     gap: 27px;
+}
+
+.links-nav-wrapper a {
+    height: 20px;
+}
+
+.links-nav-wrapper a:hover {
+    height: 18px;
+    border-bottom: 2px solid #313131;
 }
 
 .header-button-wrapper {
@@ -71,6 +122,8 @@ table {
 }
 
 .second-nav-wrapper {
+    flex-grow: 1;
+    max-width: 1280px;
     height: 90px;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +137,7 @@ table {
     padding-top: 40px;
     padding-bottom: 40px;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 aside {
@@ -171,6 +224,7 @@ main {
     gap: 39px;
     padding: 70px 0 55px 40px;
     background-image: url("/public/img/welcome-atlas-bg.png");
+    background-size: cover;
 }
 
 .welcome-atlas h1 {
@@ -204,10 +258,16 @@ main h2 {
     height: 140px;
 }
 
+.atlas-features-icon:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
 .atlas-features-item span {
     display: flex;
     align-items: center;
-    width: 250px;
+    flex-grow: 1;
+    max-width: 185px;
 }
 
 .instruction-wrapper {
@@ -223,7 +283,7 @@ main h2 {
 }
 
 .instruction-text {
-    flex-basis: 360px;
+    flex-basis: 280px;
     justify-content: center;
 }
 
@@ -233,8 +293,19 @@ main h2 {
     color: #e5e5e5;
 }
 
+.instruction-image {
+    max-width: 480px;
+    width: 100%;
+}
+
 footer {
+    justify-content: center;
+}
+
+.footer-wrapper {
     color: white;
+    max-width: 1280px;
+    flex-grow: 1;
     height: 100px;
     justify-content: space-between;
     align-items: center;
