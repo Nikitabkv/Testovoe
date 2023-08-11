@@ -49,6 +49,7 @@ regFormButton.addEventListener('click', (evt) => {
 
 regFormCloseButton.addEventListener('click', () => {
   regForm.classList.toggle('reg-form-wrapper-open')
+  document.querySelector('body').classList.toggle('modal-open')
   regFormInputs.forEach((el) => {
     el.value = ''
   })
