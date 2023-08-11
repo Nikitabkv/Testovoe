@@ -11,26 +11,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto@display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="row success-submit">
+    <div class="bg-green">
+        <span>Данные успешно отправлены</span>
+    </div>
+</div>
 <div class="reg-form-wrapper">
     <form class="reg-form">
         <label for="name">Введите ФИО: </label>
         <input type="text" name="name" id="name" required />
         <label for="phone">Введите ваш номер телефона: </label>
-        <input type="tel" name="phone" id="phone" required />
+        <input type="tel" name="phone" id="phone" data-phone-pattern='+7 (___) ___-__-__' placeholder="+7 (___) ___-__-__" required />
         <label for="email">Введите ваш email: </label>
         <input type="email" name="email" id="email" required />
         <label for="password">Введите пароль: </label>
-        <input type="password" name="password" id="password" required />
-        <label for="password2">Повторите пароль: </label>
-        <input type="password" name="password2" id="password2" required />
-        <button>Save</button>
+        <input type="password" name="password" id="password" required/>
+        <label for="passwordRepeat">Повторите пароль: </label>
+        <input type="password" name="passwordRepeat" id="passwordRepeat" required/>
+        <button>Сохранить</button>
     </form>
+    <div class="close-form">
+        <button>Закрыть</button>
+    </div>
 </div>
 <header class="shadow">
     <div class="row bg-grey header-wrapper">
         <div class="row nav-wrapper">
             <button class="burger-nav">
-                <svg id="Glyph" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"><path d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z" id="XMLID_314_"/><path d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z" id="XMLID_315_"/><path d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z" id="XMLID_316_"/></svg>
+                <svg id="Glyph" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"><path d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z" id="XMLID_314_"/><path d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z" id="XMLID_315_"/><path d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z" id="XMLID_316_"/></svg>
             </button>
             <nav class="row links-nav-wrapper">
             <a>Главная</a>
@@ -288,7 +296,7 @@
 <footer class="row bg-green">
     <div class="row footer-wrapper">
         <div>© 2018 Atlas Patient</div>
-        <div>
+        <div class="to-top">
             <span>На верх</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="12px">
                 <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M8.834,4.964 C8.742,5.058 8.621,5.106 8.501,5.106 C8.381,5.106 8.260,5.058 8.168,4.964 L4.956,1.655 L4.956,11.515 C4.956,11.783 4.745,12.000 4.486,12.000 C4.226,12.000 4.015,11.783 4.015,11.515 L4.015,1.655 L0.803,4.964 C0.619,5.153 0.321,5.153 0.137,4.964 C-0.046,4.774 -0.046,4.467 0.137,4.278 L4.153,0.142 C4.153,0.142 4.153,0.142 4.153,0.142 C4.238,0.054 4.356,-0.000 4.486,-0.000 C4.616,-0.000 4.733,0.054 4.818,0.142 C4.818,0.142 4.818,0.142 4.818,0.142 L8.834,4.278 C9.017,4.467 9.017,4.774 8.834,4.964 Z"/>
