@@ -223,7 +223,7 @@ main {
 .welcome-atlas {
     gap: 39px;
     padding: 70px 0 55px 40px;
-    background-image: url("/public/img/welcome-atlas-bg.png");
+    background-image: url("public/img/welcome-atlas-bg.png");
     background-size: cover;
 }
 
