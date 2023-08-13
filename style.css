@@ -100,6 +100,17 @@ table {
     width: 270px;
 }
 
+.showPassword,
+.showPasswordRepeat {
+    position: relative;
+}
+
+.showPassword svg,
+.showPasswordRepeat svg {
+    position: absolute;
+    left: 251px;
+}
+
 .reg-form-submit {
     display: none;
 }

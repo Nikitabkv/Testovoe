@@ -10,6 +10,9 @@ const regFormInputs = regForm.querySelectorAll('input')
 const regFormCloseButton = document.querySelector('.close-form button')
 const successSubmitModal = document.querySelector('.success-submit')
 
+const showPassButton = document.querySelector('.showPassword svg')
+const showPassRepeatButton = document.querySelector('.showPasswordRepeat svg')
+
 const phoneInputs = document.querySelectorAll('[data-phone-pattern]');
 
 const toTopFooter = document.querySelector('.to-top')
@@ -53,6 +56,18 @@ regFormCloseButton.addEventListener('click', () => {
   regFormInputs.forEach((el) => {
     el.value = ''
   })
+})
+
+showPassButton.addEventListener('click', () => {
+  regPass.getAttribute('type') === 'password'
+  ? regPass.setAttribute('type', 'text')
+  : regPass.setAttribute('type', 'password')
+})
+
+showPassRepeatButton.addEventListener('click', () => {
+  regPassRepeat.getAttribute('type') === 'password'
+    ? regPassRepeat.setAttribute('type', 'text')
+    : regPassRepeat.setAttribute('type', 'password')
 })
 
 regForm.addEventListener('submit', (evt) => {
