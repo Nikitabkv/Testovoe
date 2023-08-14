@@ -149,6 +149,7 @@ table {
 
 .links-nav-wrapper a {
     height: 20px;
+    cursor: pointer
 }
 
 .links-nav-wrapper a:hover {
@@ -169,6 +170,9 @@ table {
     margin: 0;
     background: 0;
     border: 0;
+    height: 40px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .second-nav-wrapper {
