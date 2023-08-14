@@ -30,6 +30,10 @@ table {
     flex-grow: 1;
 }
 
+.base-padding {
+    padding: 0 40px;
+}
+
 .bg-green {
     background-color: #7cb47a;
 }
@@ -180,6 +184,7 @@ table {
 }
 
 .main-wrapper {
+    overflow: hidden;
     padding-top: 40px;
     padding-bottom: 40px;
     justify-content: center;
