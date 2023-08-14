@@ -49,6 +49,7 @@ table {
 }
 
 .success-submit {
+    z-index: 10;
     display: none;
     position: fixed;
     color: white;
