@@ -1,6 +1,8 @@
 const burgerButton = document.querySelector('.burger-nav')
 const links = document.querySelector('.links-nav-wrapper')
 
+const mainWrapper = document.querySelector('.main-wrapper')
+
 const regForm = document.querySelector('.reg-form-wrapper')
 const personalDataButton = document.querySelector('.personal-data')
 const regFormButton = regForm.querySelector('button')
@@ -24,11 +26,16 @@ const successSubmit = () => {
   }, 1000)
 }
 
+mainWrapper.addEventListener('click', (evt) => {
+  links.classList.remove('links-nav-wrapper-open')
+})
+
 burgerButton.addEventListener('click', () => {
   links.classList.toggle('links-nav-wrapper-open')
 })
 
 personalDataButton.addEventListener('click', () => {
+  links.classList.remove('links-nav-wrapper-open')
   regForm.classList.toggle('reg-form-wrapper-open')
   document.querySelector('body').classList.toggle('modal-open')
   window.scrollTo({top: 0, left: 0});
